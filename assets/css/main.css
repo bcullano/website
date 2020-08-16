@@ -2089,7 +2089,7 @@ input, select, textarea {
 			color: #76ddff;
 		}
 	fa-border {
-		border: solid 0.08em red;
+		border: solid 0.08em #87CEEB;
 		border-radius: 0.1em;
 		padding: 0.2em 0.25em 0.15em;
 		}
