@@ -2216,6 +2216,7 @@ input, select, textarea {
 
 			ul.actions.stacked li {
 				padding: 0 0 0 0;
+				text-decoration: none;
 			}
 
 				ul.actions.stacked li:first-child {
@@ -2233,7 +2234,7 @@ input, select, textarea {
 				flex-grow: 1;
 				-moz-flex-shrink: 1;
 				-webkit-flex-shrink: 1;
-				-ms-flex-shrink: 1;
+				-ms-flex-shrink: #1;
 				flex-shrink: 1;
 				width: 100%;
 			}
@@ -3893,6 +3894,7 @@ input, select, textarea {
 
 		#footer .icons {
 			font-size: 1.25em;
+			text-decoration: none;
 		}
 
 			#footer .icons a {
