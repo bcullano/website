@@ -2216,7 +2216,7 @@ input, select, textarea {
 
 			ul.actions.stacked li {
 				padding: 0 0 0 0;
-				text-decoration: none;
+				text-decoration: none !important;
 			}
 
 				ul.actions.stacked li:first-child {
@@ -2314,22 +2314,6 @@ input, select, textarea {
 			ul.icons li:last-child {
 				padding-right: 0 !important;
 			}
-
-		ul.icons.major {
-			padding: 1em 0;
-		}
-
-			ul.icons.major li {
-				padding-right: 3.5em;
-			}
-
-				@media screen and (max-width: 736px) {
-
-					ul.icons.major li {
-						padding: 0 1em !important;
-					}
-
-				}
 
 /* Table */
 
@@ -3894,7 +3878,7 @@ input, select, textarea {
 
 		#footer .icons {
 			font-size: 1.25em;
-			text-decoration: none;
+			text-decoration: none !important;
 		}
 
 			#footer .icons a {
