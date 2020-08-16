@@ -2088,6 +2088,11 @@ input, select, textarea {
 		.icon.style3 {
 			color: #76ddff;
 		}
+	fa-border {
+		border: solid 0.08em black;
+		border-radius: 0.1em;
+		padding: 0.2em 0.25em 0.15em;
+		}
 
 /* Image */
 
