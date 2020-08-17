@@ -2216,12 +2216,14 @@ input, select, textarea {
 
 			ul.actions.stacked li {
 				padding: 0 0 0 0;
-				text-decoration: none !important;
 			}
 
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
+		.contact, a:link, a:visited{
+			  text-decoration: none;
+		}
 
 		ul.actions.fit {
 			width: calc(100% + 1em);
