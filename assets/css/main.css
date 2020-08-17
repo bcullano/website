@@ -2214,17 +2214,15 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-			ul.actions.stacked li {
+			ul.actions.stacked li  a:link, a:visited{
+				text-decoration: none;
+				border-bottom: none;
 				padding: 0 0 0 0;
 			}
 
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
-		.contact, a:link, a:visited{
-			text-decoration: none;
-			border-bottom: none;
-		}
 
 		ul.actions.fit {
 			width: calc(100% + 1em);
