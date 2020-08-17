@@ -2222,7 +2222,8 @@ input, select, textarea {
 					padding-top: 0;
 				}
 		.contact, a:link, a:visited{
-			  text-decoration: none;
+			text-decoration: none;
+			border-bottom: none;
 		}
 
 		ul.actions.fit {
