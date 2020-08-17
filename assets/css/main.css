@@ -2220,6 +2220,10 @@ input, select, textarea {
 				padding: 0 0 0 0;
 			}
 
+			ul.actions.stacked li a:hover {
+				color: #b3b3b3;
+			}
+
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
