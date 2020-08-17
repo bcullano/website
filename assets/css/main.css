@@ -3768,6 +3768,10 @@ input, select, textarea {
 			width: 40%;
 		}
 
+		#cta .inner .actions {
+			font-family: "Font Awesome 5 Free" !important;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			#cta .inner {
