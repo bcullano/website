@@ -3882,7 +3882,9 @@ input, select, textarea {
 			text-decoration: none !important;
 		}
 
-			#footer .icons a {
+			#footer .icons a:link, a:visited {
+				text-decoration: none;
+				border-bottom: none;
 				color: rgba(255, 255, 255, 0.5);
 			}
 
