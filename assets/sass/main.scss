@@ -550,7 +550,7 @@
 
 /* Icon */
 
-	.icon {
+	.icon, .fas {
 		@include icon;
 		border-bottom: none;
 		position: relative;
