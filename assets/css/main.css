@@ -2010,7 +2010,7 @@ input, select, textarea {
 
 /* Icon */
 
-	.icon {
+	.icon, .fa-wrench {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
@@ -2073,7 +2073,7 @@ input, select, textarea {
 
 			}
 
-		.icon.style1, .fas.fa-wrench {
+		.icon.style1, .fas.fa-wrench:before {
 			color: #00ffcc;
 		}
 
@@ -2085,21 +2085,23 @@ input, select, textarea {
 			color: #76ddff;
 		}
 
-		.fas.fa-wrench {
-			display: block;
-			position: relative;
-		}
 		.fa-wrench:before {
 			display: inline-block;
 			color: #00ffcc;
 			left: 1.75em;
 			top: 2.75em;
 			font-size: 1.5em;
-			line-height: 28.6px;
+			line-height: inherit;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 900;
+			text-rendering: auto;
 		}
-
+	
 /* Image */
 
 	.image {
@@ -2658,6 +2660,11 @@ input, select, textarea {
 					}
 
 			}
+
+	.fa-wrench>* {
+		font-family: "Open Sans", Helvetica, sans-serif;
+		line-height: 28.6px;
+	}
 
 /* Spotlight */
 
