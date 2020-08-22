@@ -2661,8 +2661,11 @@ input, select, textarea {
 
 			}
 
-	.fa-wrench>* {
+	.fa-wrench * {
 		font-family: "Open Sans", Helvetica, sans-serif;
+	}
+
+	.fa-wrench p {
 		line-height: 28.6px;
 	}
 
@@ -3789,8 +3792,8 @@ input, select, textarea {
 			width: 40%;
 		}
 
-		#cta .inner .actions {
-			font-family: "Font Awesome 5 Free" !important;
+		#cta .inner .actions li {
+			font-family: "Open Sans", Helvetica, sans-serif !important;
 		}
 
 		@media screen and (max-width: 980px) {
