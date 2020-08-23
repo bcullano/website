@@ -3411,6 +3411,14 @@ input, select, textarea {
 
 					}
 
+			#menu ul > li:hover {
+				color: #d9d9d9;
+			}
+
+			#nav a:hover {
+				color: #d9d9d9;
+			}
+
 		#menu .close {
 			background-image: url("images/close.svg");
 			background-position: 4.85em 1em;
@@ -3594,6 +3602,10 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 	}
+
+		#banner a:hover {
+			color: #d9d9d9;
+		}
 
 		#banner h2 {
 			-moz-transform: scale(1);
@@ -3856,6 +3868,16 @@ input, select, textarea {
 				color: inherit;
 			}
 
+		#main #resume {
+			text-decoration: none;
+			border-bottom: none;
+			color: #2E3842;
+		}
+
+			#main #resume:hover {
+				color: #969696;
+			}
+
 		@media screen and (max-width: 1680px) {
 
 			#main > header {
@@ -3907,18 +3929,17 @@ input, select, textarea {
 
 		#footer .icons {
 			font-size: 1.25em;
-			text-decoration: none !important;
+			border-bottom: none;
 		}
-
 			#footer .icons a:link, a:visited {
 				text-decoration: none;
 				border-bottom: none;
 				color: rgba(255, 255, 255, 0.5);
 			}
-
-				#footer .icons a:hover {
-					color: #fff;
-				}
+			
+			#footer .icons a:hover {
+				color: #fff;
+			}
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
