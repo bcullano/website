@@ -3199,7 +3199,7 @@ input, select, textarea {
 			.wrapper.style5 input[type="email"],
 			.wrapper.style5 select,
 			.wrapper.style5 textarea {
-				background-color: rgba(0, 0, 0, 0.0375);
+				background-color: #e6e6e6;
 			}
 
 			.wrapper.style5 select {
@@ -3412,11 +3412,11 @@ input, select, textarea {
 					}
 
 			#menu ul > li:hover {
-				color: #d9d9d9;
+				color: #b3b3b3;
 			}
 
 			#nav a:hover {
-				color: #d9d9d9;
+				color: #b3b3b3;
 			}
 
 		#menu .close {
@@ -3604,7 +3604,7 @@ input, select, textarea {
 	}
 
 		#banner a:hover {
-			color: #d9d9d9;
+			color: #b3b3b3;
 		}
 
 		#banner h2 {
@@ -3998,6 +3998,20 @@ input, select, textarea {
 				padding: 3em 2em 1em 2em ;
 			}
 
+		}
+
+	textarea {
+		resize: none;
+	}
+
+	footer > form {
+		margin-left: 25%;
+		margin-right: 25%;
+		width: 50%;
+	}
+
+		footer form .col-12 #submit, #reset {
+			
 		}
 
 /* Landing */
