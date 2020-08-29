@@ -237,6 +237,10 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+		.row > .col-4 {
+			width: 33.33333%;
+		}
+
 		.row > .col-6 {
 			width: 50%;
 		}
@@ -244,6 +248,7 @@ input, select, textarea {
 		.row > .col-12 {
 			width: 100%;
 		}
+
 
 		.row {
 			margin-top: 0;
@@ -261,6 +266,15 @@ input, select, textarea {
 				.row.gtr-uniform > * {
 					padding-top: 1.5em;
 				}
+
+		.row.gtr-150 {
+			margin-top: 0;
+			margin-left: -3em;
+		}
+
+			.row.gtr-150 > * {
+				padding: 0 0 0 3em;
+			}
 
 		@media screen and (max-width: 1680px) {
 
@@ -296,6 +310,14 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 		}
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 3em;
+					}
 
 		@media screen and (max-width: 1280px) {
 
@@ -331,7 +353,15 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 
-		}	
+		}		
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 3em;
+					}
 
 		@media screen and (max-width: 980px) {
 
@@ -367,6 +397,14 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 		}
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 3em;
+					}
 
 		@media screen and (max-width: 736px) {
 
@@ -402,6 +440,14 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 		}
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 3em;
+					}
 
 		@media screen and (max-width: 480px) {
 
@@ -437,6 +483,19 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 		}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -3em;
+					}
 
 /* Section/Article */
 
@@ -795,6 +854,48 @@ input, select, textarea {
 		}
 
 /* Icons */
+
+	ul.feature-icons {
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.feature-icons li {
+			text-decoration: none;
+			display: inline-block;
+			margin: 0 0 1.6875em 0;
+			padding: 0.35em 0 0 3.5em;
+			position: relative;
+			vertical-align: top;
+			width: 48%;
+		}
+
+			ul.feature-icons li:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 400;
+			}
+
+			ul.feature-icons li:before {
+				background: #4acaa8;
+				border-radius: 100%;
+				color: #ffffff;
+				display: block;
+				height: 2.5em;
+				left: 0;
+				line-height: 2.5em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 2.5em;
+			}
 
 	ul.icons {
 		cursor: default;
@@ -2336,6 +2437,89 @@ input, select, textarea {
 
 	body.is-mobile #main > header {
 		background-attachment: scroll;
+	}
+
+/*Blockquote*/
+	#three {
+		background-color: rgba(29, 36, 42, 0.9);
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+	.quote,
+	.skills,
+	.sample {
+		margin: 0 auto;
+		max-width: calc(100% - 3em);
+		width: 60em;
+	}
+
+		@media screen and (max-width: 980px) {
+
+			.quote,
+			.skills,
+			.sample {
+				max-width: 100% !important;
+				width: 100% !important;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.quote,
+			.skills,
+			.sample {
+				max-width: calc(100% - 3em);
+			}
+
+		}
+		
+/*Four*/
+	
+	#four {
+		padding-top: 3em;
+		padding-bottom: 3em;
+		background-color: rgba(35, 45, 55, 0.9);
+	}
+
+	.skills > h3 {
+		border-bottom: 1px solid white;
+		width: 80%;
+	}
+
+/*Five*/
+	#five {
+		background-color: rgba(40, 60, 80, 0.9);
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+		#five .sample2 {
+			width: 90%;
+			margin-left: 0em;
+			padding-left: 5%;
+		}
+
+		#five header {
+			margin-bottom: 1em;
+		}
+
+		#five p {
+			margin-bottom: 2.5em;
+		}
+	.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+		.image.fit img {
+				width: 100%;
+			}
+
+	.row.gtr-150.sample {
+		width: 80%;
 	}
 
 /*Text Animation*/
