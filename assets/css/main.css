@@ -2228,6 +2228,8 @@ input, select, textarea {
 				width: 1.5em;
 			}
 
+
+
 		#banner:after {
 			pointer-events: none;
 			-moz-transition: opacity 3s ease-in-out;
@@ -2442,8 +2444,8 @@ input, select, textarea {
 /*Blockquote*/
 	#three {
 		background-color: rgba(29, 36, 42, 0.9);
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 
 	.quote,
@@ -2523,14 +2525,11 @@ input, select, textarea {
 	}
 
 /*Text Animation*/
-
-	#hscroll {
+	#aboutme,
+	#portfolio {
 		opacity: 0;
-		transition: opacity 1s 0.25s ease-out;
-	}
-
-	#hscroll.is-visible {
-		opacity: 1;
+		animation: fade-in 1s forwards;
+		animation-delay: 0.25s;
 	}
 
 	.scroll-content > * {
@@ -2679,6 +2678,10 @@ input, select, textarea {
 		margin-top: 0.5em;
 	}
 
+	.copyright a {
+		text-decoration: none;
+		border-bottom: none;
+	}
 /* Landing */
 
 	body.landing #page-wrapper {
