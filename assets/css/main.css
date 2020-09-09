@@ -2562,13 +2562,48 @@ input, select, textarea {
 		margin-right: 10%;
 	}
 
-.image.fit img {
-	height: 15vw;
-}
+	.image.fit img {
+		height: 15vw;
+	}
 
-.image.fit img:hover {
-	opacity: 0.5;
-}
+	.image.fit img:hover {
+		opacity: 0.5;
+		filter: drop-shadow(7px 7px 7px gray);
+		animation: img-fade 1s forwards;
+	}
+
+	@keyframes img-fade {
+		100% {
+			transform: scale(1.05);
+		}
+	}
+
+	#separate {
+		margin-top: 1em;
+	}
+
+	.port-div {
+		margin-left: 10%;
+		margin-right: 10%;
+		text-align: center;
+	}
+
+/*Gallery*/
+
+	.gallery {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+		.gallery img {
+			height: 15vw;
+			transition: 1s;
+		}
+
+			.gallery img:hover {
+				filter: drop-shadow(7px 7px 7px gray);
+				transform: scale(1.05);
+			}
 
 /*Text Animation*/
 	#aboutme,
