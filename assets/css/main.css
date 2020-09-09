@@ -2562,11 +2562,11 @@ input, select, textarea {
 		margin-right: 10%;
 	}
 
-	.image.fit img {
+	.image.fit.img-port img {
 		height: 15vw;
 	}
 
-	.image.fit img:hover {
+	.image.fit.img-port img:hover {
 		opacity: 0.5;
 		filter: drop-shadow(7px 7px 7px gray);
 		animation: img-fade 1s forwards;
