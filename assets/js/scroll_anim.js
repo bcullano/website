@@ -6,9 +6,7 @@ function loop() {
 	elementsToShow.forEach(function(element) {
 		if (isElementInViewport(element)) {
 			element.classList.add('is-visible');
-		} else {
-			element.classList.remove('is-visible');
-		}
+		} 
 	});
 	scroll(loop);
 }
