@@ -2565,8 +2565,19 @@ input, select, textarea {
 		margin-right: 10%;
 	}
 
+		
+
+		div.inner-port p {
+			padding-bottom: 3%;
+		}
+
+	.image.fit.img-port1 img {
+		height: 18vw;
+		object-fit: cover;
+	}
 	.image.fit.img-port img {
 		height: 15vw;
+		object-fit: cover;
 	}
 
 	.image.fit.img-port img:hover {
@@ -2592,7 +2603,7 @@ input, select, textarea {
 	}
 
 	section.description {
-		background-image: linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,1)), url(../../images/njit.jpg)
+		background-image: linear-gradient(280deg, rgba(0,0,0,0),rgba(0,0,0,0.95),rgba(0,0,0,1)), url(../../images/html.png)
 	}
 
 		.description h1 {
@@ -2609,8 +2620,18 @@ input, select, textarea {
 		width: 60%;
 	}
 
-/*Phone*/
-	.spotlight-phone {
+	section.description > :nth-child(2n) {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+/*Phone & Laptop*/
+	#platform {
+		text-align: left;
+	}
+
+
+	.spotlight-phone, 
+	.spotlight-lap {
 		padding: 7rem 7rem 5rem 7rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -2652,6 +2673,25 @@ input, select, textarea {
 			margin-right: 3.5rem;
 		}
 
+		.spotlight-lap .image-lap {
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			border-radius: 0;
+			outline: 1px solid;
+			outline-offset: -1px;
+			width: 35rem;
+			height: 23.11111rem;
+			margin-top: 2.5rem;
+			margin-bottom: 5rem;
+			margin-right: 3.5rem;
+		}
+
 			.spotlight-phone .image-phone img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
@@ -2667,6 +2707,23 @@ input, select, textarea {
 				border-radius: 0;
 			}
 
+			.spotlight-lap .image-lap img {
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				display: block;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				border: 1px solid black;
+				height: 100%;
+			}
+
 			.spotlight-phone .image-phone:before {
 				content: '';
 				display: block;
@@ -2676,7 +2733,17 @@ input, select, textarea {
 				border-bottom: 0;
 			}
 
-			.spotlight-phone .image-phone:after {
+			.spotlight-lap .image-lap:before {
+				content: '';
+				display: block;
+				background-position: center;
+				background-repeat: no-repeat;
+				border: solid 1px;
+				border-bottom: 0;
+			}
+
+			.spotlight-phone .image-phone:after,
+			.spotlight-lap .image-lap:after {
 				content: '';
 				display: block;
 				background-position: center;
@@ -2692,6 +2759,13 @@ input, select, textarea {
 				border-radius: 1rem 1rem 0 0;
 			}
 
+			.spotlight-lap .image-lap:before {
+				height: 2.5rem;
+				background-size: 64px 32px;
+				margin-top: -2.5rem;
+				border-radius: 1rem 1rem 0 0;
+			}
+
 			.spotlight-phone .image-phone:after {
 				height: 3rem;
 				background-size: 64px 32px;
@@ -2699,9 +2773,17 @@ input, select, textarea {
 				border-radius: 0 0 1rem 1rem;
 			}
 
+			.spotlight-lap .image-lap:after {
+				height: 1.5rem;
+				background-size: 64px 32px;
+				margin-bottom: -3rem;
+				border-radius: 0 0 1rem 1rem;
+			}
+
 		@media screen and (max-width: 1680px) {
 
-			.spotlight-phone {
+			.spotlight-phone,
+			.spotlight-lap {
 				padding: 5rem 5rem 3rem 5rem ;
 			}
 
@@ -2709,7 +2791,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			.spotlight-phone {
+			.spotlight-phone,
+			.spotlight-lap {
 				padding: 4rem 4rem 2rem 4rem ;
 			}
 
@@ -2717,25 +2800,29 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			.spotlight-phone {
+			.spotlight-phone,
+			.spotlight-lap {
 				padding: 3.75rem 3rem 1.75rem 3rem ;
 			}
 
-				.spotlight-phone .image-phone {
+				.spotlight-phone .image-phone,
+				.spotlight-lap .image-lap {
 					width: 11.375rem;
 					height: 20.22222rem;
 					margin-top: 2.1875rem;
 					margin-bottom: 4.625rem;
 				}
 
-					.spotlight-phone .image-phone:before {
+					.spotlight-phone .image-phone:before,
+					.spotlight-lap .image-lap:before {
 						height: 2.1875rem;
 						background-size: 56px 28px;
 						margin-top: -2.1875rem;
 						border-radius: 0.875rem 0.875rem 0 0;
 					}
 
-					.spotlight-phone .image-phone:after {
+					.spotlight-phone .image-phone:after,
+					.spotlight-lap .image-lap:after {
 						height: 2.625rem;
 						background-size: 56px 28px;
 						margin-bottom: -2.625rem;
@@ -2746,7 +2833,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.spotlight-phone {
+			.spotlight-phone,
+			.spotlight-lap {
 				padding: 2.5rem 2rem 0.5rem 2rem ;
 				-moz-align-items: -moz-flex-start;
 				-webkit-align-items: -webkit-flex-start;
@@ -2754,21 +2842,24 @@ input, select, textarea {
 				align-items: flex-start;
 			}
 
-				.spotlight-phone .image-phone {
+				.spotlight-phone .image-phone,
+				.spotlight-lap .image-lap {
 					width: 8.125rem;
 					height: 14.44444rem;
 					margin-top: 1.5625rem;
 					margin-bottom: 3.875rem;
 				}
 
-					.spotlight-phone .image-phone:before {
+					.spotlight-phone .image-phone:before,
+					.spotlight-lap .image-lap:before {
 						height: 1.5625rem;
 						background-size: 40px 20px;
 						margin-top: -1.5625rem;
 						border-radius: 0.625rem 0.625rem 0 0;
 					}
 
-					.spotlight-phone .image-phone:after {
+					.spotlight-phone .image-phone:after,
+					.spotlight-lap .image-lap:after {
 						height: 1.875rem;
 						background-size: 40px 20px;
 						margin-bottom: -1.875rem;
@@ -2779,7 +2870,8 @@ input, select, textarea {
 
 		@media screen and (orientation: portrait) {
 
-			.spotlight-phone {
+			.spotlight-phone,
+			.spotlight-lap {
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -2791,12 +2883,9 @@ input, select, textarea {
 				text-align: center !important;
 			}
 
-				.spotlight-phone .content {
-					width: 34rem;
-					max-width: 100%;
-				}
 
-				.spotlight-phone .image-phone {
+				.spotlight-phone .image-phone,
+				.spotlight-lap .image-lap {
 					margin-right: 0;
 					margin-left: 0;
 				}
@@ -2808,8 +2897,48 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.spotlight-phone .imag-phone:after {
+		.spotlight-phone .image-phone:after {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: rgba(0, 0, 0, 0.2)%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='6' y='4' width='52' height='24' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
+		}
+
+	.laptop {
+		width: 50%;
+		position: relative;
+		justify-content: center;
+	}
+
+		.laptop img {
+			width: 100%;
+		}
+
+		.laptop video {
+			position: absolute;
+			background-color: black;
+			width: 73%;
+			height: 76%;
+			right: 13.65%;
+			top: 8.5%;
+		}
+
+	.phone {
+		width: 15%;
+		position: relative;
+		justify-content: center;
+		margin-right: 5%;
+	}
+
+		.phone img {
+			width: 100%;
+		}
+
+		.phone video {
+			position: absolute;
+			background-color: black;
+			width: 87.88%;
+			height: 76.5%;
+			right: 5.35427%;
+			top: 11%;
+			object-fit: fill;
 		}
 
 /*Gallery*/
@@ -2841,13 +2970,6 @@ input, select, textarea {
 		opacity: 0;
 		transition: opacity 0.5s 0.25s ease-in-out;
 	}
-
-		.scroll-content:before {
-			opacity: 0;
-			transition: opacity 0.5s 0.25s ease-in-out;
-			animation: fade-in 1s forwards;
-			animation-delay: 1s;
-		}
 
 		@keyframes fade-in {
 			100% {
