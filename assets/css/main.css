@@ -2616,14 +2616,23 @@ input, select, textarea {
 			color: #fff;
 		}
 
-	section.description .image {
-		width: 60%;
+		section.description .image {
+			width: 60%;
+		}
+
+		section.description > :nth-child(2n) {
+			padding-top: 5%;
+			padding-bottom: 5%;
+		}
+	section.description1 h1 {
+		color: rgb(78,72,82);
+		font-size: 140%;
 	}
 
-	section.description > :nth-child(2n) {
-		padding-top: 5%;
-		padding-bottom: 5%;
+	section.description1 .image {
+		margin-right: 5%;
 	}
+	
 /*Phone & Laptop*/
 	#platform {
 		text-align: left;
