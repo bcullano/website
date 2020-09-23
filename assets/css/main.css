@@ -2970,6 +2970,20 @@ input, select, textarea {
 		background-color: rgba(0,0,0,0.85);
 	}
 
+	#note p {
+		text-align: center;
+		font-size: 1.15em;
+	}
+	#note a {
+		color: rgb(78,72,82);
+		text-decoration: none;
+		border-bottom: none;
+		font-size: 2em;
+	}
+
+		#note a:hover {
+			color: #b3b3b3;
+		}
 /*Gallery*/
 
 	.gallery {
