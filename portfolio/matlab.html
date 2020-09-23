@@ -39,31 +39,23 @@
 							<h2>MATLAB</h2>
 						</header>
 						
-						<section class="spotlight description rightpic wrapper style5 show-on-scroll">
-							<div class="image"></div>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image"><img class="show-on-scroll" src="../images/radial_image.png" alt="Radial picture of a classroom from inside an RC car" /></div>
 							<div class="content scroll-content">
-								<h1 class="show-on-scroll">HTML + CSS</h1>
-								<p class="show-on-scroll">I worked on this website to learn HTML and CSS and to better showcase my skills to potential employers.</p>
+								<h1 class="show-on-scroll">MATLAB and Image Warping</h1>
+								<p class="show-on-scroll">MATLAB was the first programming language I learned. I was never too interested in coding, but in recent years decided to learn other languages to expand my skills and to use them for projects. During my freshman year at NJIT, I had to take an introductory MATLAB class. The following year, I volunteered to help out with a research project in the Computer Engineering Department that my friend was working on. After a week or two there, we started reviewing MATLAB to try an unwrap the image to the right. The plan was to use a camera in an RC car to simulate first person driving.</p>
 							</div>
 						</section>
-					<section class="spotlight-phone wrapper style5">
-							<div class="scroll-content">
-								<h2 class="show-on-scroll">Mobile</h2>
-								<p class="show-on-scroll">Mobile phone compatible layout</p>
-							</div>
-							<div class="phone scroll-content">
-								<img class="show-on-scroll" src="../images/phone.png" />
-								<video class="show-on-scroll" src="../videos/phone-scroll.mp4" autoplay loop muted preload="auto" />
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image"><img class="show-on-scroll" src="../images/unwarped.png" alt="Unwarped picture of the radial image" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">The problem with the setup was that the captured image was radial due to the conical mirror> The mirror was installed to simulate a 360 degree camera since it could not fit inside the car. After looking at MATLAB forums, tutorials, documentation pages, I got a program to unwrap the image into a typical landscape photo. It's not perfect, but functional.</p>
 							</div>
 						</section>
-						<section id="platform" class="spotlight-lap wrapper style5">
-							<div class="scroll-content">
-								<h2 class="show-on-scroll">Laptop/Desktop</h2>
-								<p class="show-on-scroll">Normal viewport.</p>
-							</div>
-							<div class="laptop scroll-content">
-								<img class="show-on-scroll" src="../images/laptop.png" />
-								<video class="show-on-scroll" src="../videos/Nanako.mp4" autoplay loop muted preload="auto" />
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image"><img class="show-on-scroll" src="../images/mult_pov.png" alt="Screenshot of the unwarped picture split into four different views" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">The next step, was to separate the unwarped image into four different views to represent the front, the sides, and the back view of the car. This was much easier than the previous step. With these codes, we brought them over to LabVIEW where a GUI was made to control all the necessary aspects of driving this car. Although I learned a little bit of LabVIEW during this project, I haven't worked with it enough before my internship started and haven't used it since.</p>
 							</div>
 						</section>
 					</article>
