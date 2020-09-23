@@ -2443,7 +2443,6 @@ input, select, textarea {
 
 /*Blockquote*/
 	#three {
-		background-color: rgba(29, 36, 42, 0.9);
 		padding-top: 5em;
 		padding-bottom: 5em;
 	}
@@ -2485,7 +2484,7 @@ input, select, textarea {
 	#four {
 		padding-top: 3em;
 		padding-bottom: 3em;
-		background-color: rgba(35, 45, 55, 0.9);
+		background-color: rgba(29, 36, 42, 0.9);
 	}
 
 	.skills > h3 {
@@ -2495,7 +2494,7 @@ input, select, textarea {
 
 /*Five*/
 	#five {
-		background-color: rgba(40, 60, 80, 0.9);
+		background-color: rgba(35, 45, 55, 0.9);
 		padding-top: 3em;
 		padding-bottom: 3em;
 	}
@@ -2611,10 +2610,15 @@ input, select, textarea {
 			color: #fff;
 		}
 
-		.description p {
+		.description p, .description li {
 			font-size: 110%;
 			color: #fff;
+			line-height: 2em;
 		}
+
+			.description a:hover {
+				color: rgba(255,255,255,0.75);
+			}
 
 		section.description .image {
 			width: 60%;
@@ -2629,16 +2633,23 @@ input, select, textarea {
 		font-size: 140%;
 	}
 
+	section.description1 p {
+		line-height: 2em;
+	}
+
 	section.description1 .image {
 		margin-right: 5%;
 	}
-	
-/*Phone & Laptop*/
-	#platform {
-		text-align: left;
+
+	section.description1.leftpic .image {
+		margin-left: 5%;
 	}
 
-
+	section.description1.border img {
+		border: 1px solid black;
+	}
+	
+/*Phone & Laptop*/
 	.spotlight-phone, 
 	.spotlight-lap {
 		padding: 7rem 7rem 5rem 7rem ;
@@ -2927,6 +2938,7 @@ input, select, textarea {
 			height: 76%;
 			right: 13.65%;
 			top: 8.5%;
+			object-fit: fill;
 		}
 
 	.phone {
@@ -2949,6 +2961,14 @@ input, select, textarea {
 			top: 11%;
 			object-fit: fill;
 		}
+
+	#plat-desc {
+		width: 50%;
+	}
+
+	section.spotlight-phone, section.spotlight-lap {
+		background-color: rgba(0,0,0,0.85);
+	}
 
 /*Gallery*/
 
