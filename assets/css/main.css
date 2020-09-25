@@ -2639,6 +2639,7 @@ input, select, textarea {
 
 	section.description1 .image {
 		margin-right: 5%;
+		margin-left: 5%;
 	}
 
 	section.description1.leftpic .image {
@@ -2647,6 +2648,10 @@ input, select, textarea {
 
 	section.description1.border img {
 		border: 1px solid black;
+	}
+
+	section.description1 video {
+		width: 100%;
 	}
 	
 /*Phone & Laptop*/
