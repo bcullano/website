@@ -2215,6 +2215,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.tight {
+		padding-top: 0px;
+	}
+
 	.port-div {
 		margin-left: 10%;
 		margin-right: 10%;
