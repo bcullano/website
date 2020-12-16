@@ -2203,6 +2203,15 @@ input, select, textarea {
 		padding-top: 0.25em; 
 	}
 
+	.shorten {
+		width: 1em;
+	}
+
+	.drone_vid {
+		height: 35em;
+		width: auto;
+	}
+
 	#separate {
 		margin-top: 1em;
 	}
