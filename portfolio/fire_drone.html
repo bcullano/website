@@ -44,7 +44,12 @@
 							<div class="content scroll-content">
 								<h1 class="show-on-scroll">Drone Science Class</h1>
 								<p class="show-on-scroll">During the Fall 2020 semester, I have been in a drone science class where we learn about how drones work, Federal Aviation Administration regulations, typical sensors used, and Python to use on rented Tello DJI drones. The class focuses on a project where the students come up with an idea related to drones that could be used for an entrepreneurship challenge. My friends and I decided to create a mechanism that could be attached to a standard F450 drone frame that would use readily available CO2 cartridges to launch a projectile at a fire that would explode and release an extinguishing agent. The pandemic makes it hard to work together, so each person makes the contributions that they can.</p>
-								<i class="show-on-scroll">(Last updated: November 23, 2020) Bracket has been designed and the second update has been made with our professor. All that's left is assembly and testing.</i>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image"><img class="show-on-scroll" src="../images/launcher.jpg" alt="Picture of finished product" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll"> The mechanism has been assembled and the code runs as expected. However, due to a leak in the regulator, the projectile cannot be launched. Due to time constraints and to save resources, the regulator was not replaced. Although the project has officially finished, I would like to continue it and get it working in the future.</p>
 							</div>
 						</section>
 						<section class="drone wrapper style5">
@@ -143,9 +148,60 @@
 							</div>
 						</section>
 						<section class="spotlight description1 wrapper style5 tight show-on-scroll">
-							<div class="image"><img class="show-on-scroll" src="../images/drone_arduino.png" alt="Screenshot of the arduino code for the drone." /></div>
+							<div class="image"><img class="show-on-scroll shorten" src="../images/drone_arduino.png" alt="Screenshot of the arduino code for the drone." /></div>
 							<div class="content scroll-content">
-								<p class="show-on-scroll">Although I do not have any past experience working with C++, the code on the right was not too complicated to understand. It is a work in progress. The logic is supposed to be a dedicated button to run the program, a loop is used to rotate the servomotor and lift the arm, and once it reaches the maximum angle, the solenoid releases the CO2 and after the projectile is gone, the servo goes back to its original position.</p>
+								<p class="show-on-scroll">Although I do not have any past experience working with Arduino code, the code on the right was not too complicated to understand. The code creates a servo object and sets pin 8 as an output for the solenoid and pin 9 as an output for the servo. The servo goes to 175 degrees, which is the maximum angle for the servo arm to move. Afterwards, the solenoid is energized, releasing the CO2 to propel the projectile.</p>
+							</div>
+						</section>
+						<section class="drone wrapper style5">
+							<div class="inner scroll-content">
+								<header class="show-on-scroll">
+									<hr id="separate1" class="show-on-scroll"/>
+									<h3 class="project">Below are some pictures of the assembled project.</h3>
+									<hr id="separate" class="show-on-scroll"/>
+								</header>
+							</div>
+							<div class="port-div">
+								<div class="row gtr-150 sample2">
+									<div class="col-4 col-12-medium">
+										<div class="image fit img-port"><a class="scroll-content" href="../images/launcher.jpg" data-lightbox="image-2" data-title="Assembled launcher"><img class="show-on-scroll" src="../images/launcher.jpg" alt="Launcher" /></a>
+										</div>
+										<div class="scroll-content">
+											<h3 class="show-on-scroll">Assembled Launcher</h3>
+										</div>
+									</div>
+									<div class="col-4 col-12-medium">
+										<div class="image fit img-port"><a class="scroll-content" href="../images/drone_interior.png" data-lightbox="image-2" data-title="Inside of the tube, the projectile, which is a plastic ball in this case, is being blocked by the servo arm. This prevents the projectile from falling out mid-flight."><img class="show-on-scroll" src="../images/drone_interior.png" alt="Picture of inside the ABS barrel" /></a></div>
+										<div class="scroll-content">
+											<h3 class="show-on-scroll">Servo Arm Blocking Ball</h3>
+										</div>
+									</div>
+									<div class="col-4 col-12-medium">
+										<div class="image fit img-port"><a class="scroll-content" href="../images/arduino.png" data-lightbox="image-2" data-title="Picture of Arduino with wires. Solenoid is controlled by pin 8 and is powered with the V_in and ground pins. The servo motor is controlled with pin 9 and is powered by the 5 V and ground pins."><img class="show-on-scroll" src="../images/arduino.png" alt="Picture of teh wired Arduino" /></a></div>
+										<div class="scroll-content">
+											<h3 class="show-on-scroll">Arduino</h3>
+										</div>
+									</div>
+									<div class="col-4 col-12-medium">
+										<div class="image fit img-port"><a class="scroll-content" href="../images/connection_board.png" data-lightbox="image-2" data-title="Picture of the connection board that came with the solenoid valve. I had to solder the resistors, a replacement IRF3205 transistor, and the screw-in connection housings."><img class="show-on-scroll" src="../images/connection_board.png" alt="Picture of the solenoid connection board" /></a></div>
+										<div class="scroll-content">
+											<h3 class="show-on-scroll">Solenoid Connection Board</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="inner scroll-content">
+								<header class="show-on-scroll">
+									<hr id="separate1" class="show-on-scroll"/>
+									<h3 class="project">Below is a video showing the mechanism releasing a ball from an incline.</h3>
+									<hr id="separate" class="show-on-scroll"/>
+								</header>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 tight show-on-scroll">
+							<div class="image"><video controls class="show-on-scroll drone_vid" src="../videos/drone_test.mp4" alt="Video of launcher mechanism releasing ball." /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">Because the regulator has a leak, the launcher cannot shoot a projectile. However, this video shows the rest of the mechanism working with the Arduino code by keeping the launcher inclined. The plastic ball is kept inside with the servo arm and the servo can be heard turning to the maximum position. At this point, a tick is heard which is the solenoid opening. Due to the incline, the ball rolls out, and the closing tick is heard, as well as the servo returning to its starting position.</p>
 							</div>
 						</section>
 					</article>
