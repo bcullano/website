@@ -2212,6 +2212,15 @@ input, select, textarea {
 		width: auto;
 	}
 
+	#link {
+		color: rgb(78, 72, 82);
+		border-bottom: none;
+	}
+
+		#link:hover {
+			color: rgb(172, 171, 172);
+		}
+
 	#separate {
 		margin-top: 1em;
 	}
