@@ -43,13 +43,34 @@
 							<div class="image scroll-content"><img class="show-on-scroll" src="../images/chairv4.JPG" alt="Render of wheelchair" /></div>
 							<div class="content scroll-content">
 								<h1 class="show-on-scroll">Senior Capstone Project</h1>
-								<p class="show-on-scroll"> For my senior capstone project, two of my friends and I decided to desing a wheelchair that would assist patients with sitting and standing up. There many different types of wheelchairs available such as reclining ones, power wheelchairs, etc. We have found some power wheelchairs that can tilt, move with a joystick, and recline. The only issue is the high pricing. Our goal is to try and keep the price down, and focus on the aspect of getting in and out of a wheelchair.</p>
+								<p class="show-on-scroll">For my senior capstone project, two of my friends and I decided to desing a wheelchair that would assist patients with sitting and standing up. There many different types of wheelchairs available such as reclining ones, power wheelchairs, etc. We have found some power wheelchairs that can tilt, move with a joystick, and recline. The only issue is the high pricing. Our goal is to try and keep the price down, and focus on the aspect of getting in and out of a wheelchair.</p>
 							</div>
 						</section>
 						<section class="spotlight description1 wrapper style5 show-on-scroll">
 							<div class="image scroll-content"><img class="show-on-scroll" src="../images/extendv4.JPG" alt="Picture of wheelchair tilt mechanism" /></div>
 							<div class="content scroll-content">
-								<p class="show-on-scroll"> From my personal experience with my grandmother, she has a hard time sitting down. She often has trouble due to different seat heights and usually feels pain when landing on various seats. With this in mind, I proposed the idea of having the seat tilt and have a damping system to help guide a patient like her into a seated position. Conversely, my friends suggested the idea to create a mechanism to help patients out of a wheelchair, which is where the linear actuator comes in to slowly guide them up.</p>
+								<p class="show-on-scroll">From my personal experience with my grandmother, she has a hard time sitting down. She often has trouble due to different seat heights and usually feels pain when landing on various seats. With this in mind, I proposed the idea of having the seat tilt and have a damping system to help guide a patient like her into a seated position. Conversely, my friends suggested the idea to create a mechanism to help patients out of a wheelchair, which is where the linear actuator comes in to slowly guide them up.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/gantt.png" alt="Picture of Gantt Chart" /></div>
+							<div class="content scroll-content">
+								<h1 class="show-on-scroll">Project Timeline</h1>
+								<p class="show-on-scroll">At the beginning of the semester, we created the Gantt Chart on the right to outline how the workflow would be moving on. We were on schedule for the most part; the only major changes would be starting CAD modeling earlier and delays pushing the FEA later in the semester.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/prototype.jpg" alt="Render of wheelchair mechanism prototype" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">As part of our presentation, we had planned to assemble a prototype with a simplified design to display the proof of concept while keeping the cost lower than it would normally be. We had applied for funding to NJIT's Mechanical Engineering Department with a bill of materials of a damper, linear actuator, and typical wood and relevant fasteners. However, the parts failed to arrive in time, but the proposed prototype is shown on the left.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/wheelchair_bom.png" alt="Screenshot of Wheelchair Bill of Materials" /></div>
+							<div class="content scroll-content">
+								<h1 class="show-on-scroll">Bill of Materials</h1>
+								<p class="show-on-scroll">On the right, there is a screenshot of our bill of materials. To design for assembly, most of the parts used are standardized, allowing for easy replacements and procuring if necessary. The frame would be custom made, while a slab of steel would be used for the base and base mounts. Aside from the parts and materials, an estimated $1400 was added on to account for labor, services, and other expenses. If there was more time in the semester, more attention and calculation would be needed for the cost analysis, to keep the product as simple, safe, and cheap as possible.</p>
+								<p class="show-on-scroll">As per our design objectives, the wheelchair should not corrode if used in inclement weather. With this in mind, typical wheelchair materials, such as 6061-T6 aluminum was used. For the steel components, they will be coated to increase corrosive resistance.</p>
 							</div>
 						</section>
 						<section class="wrapper style5">
@@ -68,7 +89,7 @@
 										</div>
 									</div>
 									<div class="col-4 col-12-medium">
-										<div class="image fit img-port"><a class="scroll-content" href="../images/tilt.png" data-lightbox="image-1" data-title="Picture of tilt mechanism within frame."><img class="show-on-scroll" src="../images/tilt.png" alt="Wheelchair Version 1" /></a>
+										<div class="image fit img-port"><a class="scroll-content" href="../images/tilt.png" data-lightbox="image-1" data-title="Picture of tilt mechanism within frame. Uses a parallelogram form 4-bar linkage."><img class="show-on-scroll" src="../images/tilt.png" alt="Wheelchair Version 1" /></a>
 										</div>
 										<div class="scroll-content">
 											<h3 class="show-on-scroll">Tilt Mechanism</h3>
@@ -122,6 +143,49 @@
 										<div class="scroll-content">
 											<h3 class="show-on-scroll">4th Wheelchair Design Extended</h3>
 										</div>
+									</div>
+								</div>
+							</div>
+						<div class="inner scroll-content">
+						<hr id="separate" class="show-on-scroll"/>
+						<p class="project show-on-scroll" >Below are pictures of some plots obtained from FInite Element Analysis. Our design objective was to have a minimum factor of safety of 2. The displacements and maximum stresses in the analyzed components were all within acceptable ranges, so the factor of safety plots were the main focus. For the FEA, extreme loading conditions were assumed.</p>
+						<hr id="separate" class="show-on-scroll"/>
+						</div>
+						<div class="port-div">
+							<div class="row gtr-150 sample2">
+								<div class="col-4 col-12-medium">
+									<div class="image fit img-port"><a class="scroll-content" href="../images/fos_frame.png" data-lightbox="image-2" data-title="Factor of safety plot for frame. 3 studies performed on frame: load on footrests (shown), load on seat, and load from base. The lowest factor of safety from the simulations was from the seat study at 4.187."><img class="show-on-scroll" src="../images/fos_frame.png" alt="Factor of safety plot for wheelchair frame." /></a>
+									</div>
+									<div class="scroll-content">
+										<h3 class="show-on-scroll">Factor of Safety Plot for Frame</h3>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="image fit img-port"><a class="scroll-content" href="../images/fos_base.png" data-lightbox="image-2" data-title="Factor of safety plot for base. Experiences load from battery, dampers, and linear actuators. Extreme cases calculated for both dampers and actuators, so the factor of safety shown, is lower than it would normally be."><img class="show-on-scroll" src="../images/fos_base.png" alt="Factor of safety plot for wheelchair base." /></a>
+									</div>
+									<div class="scroll-content">
+										<h3 class="show-on-scroll">Factor of Safety Plot for Base</h3>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="image fit img-port"><a class="scroll-content" href="../images/fos_mount.png" data-lightbox="image-2" data-title="Factor of safety plot for base mounts. 4 mounts added to increase factor of safety of base to at least 2. FEA led to frame redesign to support the back of the base as well."><img class="show-on-scroll" src="../images/fos_mount.png" alt="Factor of safety plot for wheelchair base mounts." /></a>
+									</div>
+									<div class="scroll-content">
+										<h3 class="show-on-scroll">Factor of Safety Plot for Base Mounts</h3>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="image fit img-port"><a class="scroll-content" href="../images/fos_seat.png" data-lightbox="image-2" data-title="Factor of safety plot for seat. Affected by dampers."><img class="show-on-scroll" src="../images/fos_seat.png" alt="Factor of safety plot for wheelchair seat." /></a>
+									</div>
+									<div class="scroll-content">
+										<h3 class="show-on-scroll">Factor of Safety Plot for Seat</h3>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="image fit img-port"><a class="scroll-content" href="../images/fos_back.png" data-lightbox="image-2" data-title="Factor of safety plot for seat back. Vertical loading from linear actuators."><img class="show-on-scroll" src="../images/fos_back.png" alt="Factor of safety plot for wheelchair seat back." /></a>
+									</div>
+									<div class="scroll-content">
+										<h3 class="show-on-scroll">Factor of Safety Plot for Seat Back</h3>
 									</div>
 								</div>
 							</div>
