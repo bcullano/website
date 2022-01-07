@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	  <title>Bryan Cullano - Portfolio - Christmas Scene</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	  <link rel="stylesheet" href="../assets/css/main.css" />
+	  <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+
+<body class="is-preload" style="overflow-x: hidden">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					 <header id="header">
+					  <h1><a href="../index.html">Bryan Cullano</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="../index.html">Home</a></li>
+											<li><a href="../aboutme.html">About Me</a></li>
+											<li><a href="../portfolio.html">Portfolio</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Main -->
+					<article id="main">
+						<header id="portfolio">
+							<h2>Christmas Scene</h2>
+						</header>
+						
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/xmas_elec.jpg" alt="Picture of a MDF board with some wiring" /></div>
+							<div class="content scroll-content">
+								<h1 class="show-on-scroll">Christmas Gift</h1>
+								<p class="show-on-scroll">When I found a gift for my friend in the Fall, I wanted to put more thought into it since the gift itself is small. So, I came up with the idea of adding electronics to create a nice presentation for the necklace.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/xmas_wiring.jpg" alt="Picture of the PCB compartment for the scene" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">I thought a fun, cute way to present the gift was to create a little Christmas scene and have the gift be under the Christmas tree. The idea changed a lot over time, especially considering the fact that I needed to ship it in a package. So, I scaled down my idea and tried to keep things simple to ensure nothing much could go wrong. A clever way for me to conceal the electronics was to tape everything down, cover it in white gesso, and put the main components into a gingerbread house that I designed and 3D printed. The inner workings are shown on the left. I soldered an Arduino Nano, LED strip, 5mm LEDs, a speaker connected to an amplifier board, and a barrel jack to a PCB inside the gingerbread house.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><img class="show-on-scroll" src="../images/xmas_final.jpg" alt="Picture of the final product" /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">Aside from the gingerbread house, I also designed and 3D printed the tree. It's made up of 4 layers, each one with holes to fit 5mm LEDs that I had from an Arduino kit. The top layer is a small tree tip for an LED that is covered with a star printed with 0% infill density to have some light bleed through. I hot glued everything together, and decided to design and 3D print some feet at the corners to not only have smooth corners, but to have some elevation to make it easy to pickup. All that was left was to glue on some cotton balls, use gesso for parts of the MDF board that weren't covered, and put a sign as a final touch.</p>
+							</div>
+						</section>
+						<section class="spotlight description1 wrapper style5 show-on-scroll">
+							<div class="image scroll-content"><video class="show-on-scroll" src="../videos/xmas.mp4" autoplay loop preload="auto" controls /></div>
+							<div class="content scroll-content">
+								<p class="show-on-scroll">A video of the scene playing is shown on the left, though the sound is low. The music playing is a recording of me playing "We Wish You a Merry Christmas", followed by part of the song, "Ashes of Dreams" from the video game, Nier Replicant. The LED strip is made up of WS2812B LEDs controlled using the FastLED Arduino library. The audio recordings were converted to be .wav files to be used with the TMRpcm library and were read using an SD card reader.</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer" class="scroll-content">
+
+						<h2 class="show-on-scroll">Let me know your thoughts down below!</h2>
+
+						<hr id="foothead" class="show-on-scroll"/>
+
+						<!--Form-->
+						<form class="show-on-scroll" method="post" action="https://formspree.io/mlepkvnl">
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="Email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<input type="text" name="Subject" id="demo-subject" placeholder="Subject" rows="6" />
+								</div>
+								<div class="col-12">
+									<textarea name="Message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" name="Submit" value="Send Message" id="submit" class="primary" /></li>
+										<li><input type="reset" value="Reset" id="reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+
+						<hr class="show-on-scroll"/>
+						
+						<ul class="icons show-on-scroll">
+							<li><a href="mailto:bryanc0628@gmail.com" class="icon solid fa-envelope"></a></li>
+							<li><a href="tel:908-500-6280" class="fas fa-phone"></a></li>
+							<li><a class="fab fa-github" href="https://github.com/bcullano" target="_blank"></a></li>
+							<li><a class="fab fa-linkedin" href="https://www.linkedin.com/in/bryan-cullano" target="_blank"></a></li>
+						</ul>
+						<ul class="copyright show-on-scroll">
+							<li>&copy; Bryan Cullano</li>
+							<li>2020</li>
+							<li><a href="#main" class="more scrolly"> Back to Top</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/scroll_anim.js"></script>
+
+	</body>
+</html>
